@@ -1,0 +1,17 @@
+<div class="container mt-5">
+<h2>Lista de ofertas</h2>
+<table class="table table-bordered" style=" background: rgba(255,255,255,0.8);" *ngFor="let item of this.ofertasArray">
+    <thead>
+      <tr>
+        <th class="col-md-3">Titulo</th>
+        <th class="col-md-3">Mostrar detalles</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{this.item.titulo}}</td>
+        <td><button type="button" class="btn btn-primary col-md-2" (click)="this.moreInfo(item.id)">VER</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,28 @@
+<div class="container mt-5">
+    <h2>Detalles de la oferta</h2>
+    <table class="table table-bordered" style="background: rgba(255,255,255,0.8);">
+        <thead>
+          <tr>
+            <th class="col-md-2">Titulo</th>
+            <th class="col-md-2">Descripción</th>
+            <th class="col-md-2">Empresa</th>
+            <th class="col-md-2">Ciudad</th>
+            <th class="col-md-2">Salario</th>
+            <th class="col-md-2">Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>{{this.ofertaDetalle.titulo}}</td>
+            <td>{{this.ofertaDetalle.descripcion}}</td>
+            <td>{{this.ofertaDetalle.empresa}}</td>
+            <td>{{this.ofertaDetalle.ciudad}}</td>
+            <td>{{this.ofertaDetalle.salario | currency:'EUR'}}</td>
+            <td>{{this.ofertaDetalle.email}}</td> 
+          </tr>
+        </tbody>
+      </table>
+      <div class="row d-flex justify-content-center mt-5">
+      <button type="button" class="btn btn-primary col-md-2" (click)="this.goBackHome()">VER MÁS OFERTAS</button>
+      </div>
+    </div>

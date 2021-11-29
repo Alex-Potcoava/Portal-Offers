@@ -1,0 +1,8 @@
+body {
+  height: 100vh;
+  background-image: url(assets/image/Fondo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
